@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: testcase
+      MYSQL_USER: testuser
+      MYSQL_PASSWORD: testpass
+    ports:
+      - "9906:3306"
+  php:
+    build: .
+    environment:
+      DB_DATABASE: testcase
+      DB_USER: testuser
+      DB_PASS: testpass
+    depends_on:
+      - db
+    volumes:
+      - ./:/code

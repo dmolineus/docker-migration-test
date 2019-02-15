@@ -11,6 +11,7 @@
          beStrictAboutResourceUsageDuringSmallTests="true"
          beStrictAboutTodoAnnotatedTests="true"
          bootstrap="vendor/autoload.php"
+         printerClass="Sempro\PHPUnitPrettyPrinter\PrettyPrinter"
 >
     <testsuites>
         <testsuite name="Doctrine schema migration test">
