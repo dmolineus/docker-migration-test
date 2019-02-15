@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7cd969f080bbeb11e5fa252e33c4da6",
+    "content-hash": "cc8a7b65da9e125e5f7fddff65321461",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -1560,61 +1560,35 @@
             "time": "2016-10-03T07:35:21+00:00"
         },
         {
-            "name": "symfony/dotenv",
-            "version": "v4.2.3",
+            "name": "sempro/phpunit-pretty-print",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/dotenv.git",
-                "reference": "9a3bdfcd7a0d9602754894d76c614d15ca366535"
+                "url": "https://github.com/sempro/phpunit-pretty-print.git",
+                "reference": "415d2a22d173c376ffb01db57f5c88c07c3f8dea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dotenv/zipball/9a3bdfcd7a0d9602754894d76c614d15ca366535",
-                "reference": "9a3bdfcd7a0d9602754894d76c614d15ca366535",
+                "url": "https://api.github.com/repos/sempro/phpunit-pretty-print/zipball/415d2a22d173c376ffb01db57f5c88c07c3f8dea",
+                "reference": "415d2a22d173c376ffb01db57f5c88c07c3f8dea",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
-            },
-            "require-dev": {
-                "symfony/process": "~3.4|~4.0"
+                "php": ">=7.0.0",
+                "phpunit/phpunit": ">=7.0.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "Symfony\\Component\\Dotenv\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
+                    "Sempro\\PHPUnitPrettyPrinter\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Registers environment variables from a .env file",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "dotenv",
-                "env",
-                "environment"
-            ],
-            "time": "2019-01-24T21:39:51+00:00"
+            "description": "Prettify PHPUnit output",
+            "time": "2018-09-03T07:04:02+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1772,6 +1746,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.1"
+    },
     "platform-dev": []
 }
