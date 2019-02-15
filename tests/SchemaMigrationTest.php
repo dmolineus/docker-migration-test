@@ -72,7 +72,10 @@ final class SchemaMigrationTest extends SchemaMigrationTestCase
     {
         return [
             ['string', [], 'string', [], ['abc', 'foo', 'bar']],
-            ['string', [], 'decimal', [], ['abc', 'foo', 'foo']],
+            ['string', [], 'string', [], ['abc', 'foo', 'foo']],
+            ['decimal', [], 'decimal', [], [1, 2]],
+            ['decimal', [], 'decimal', [], [1, 2, 1.0]],
+            ['decimal', [], 'decimal', [], [1, 2, 1.0, 1]],
         ];
     }
 }
